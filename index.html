@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>診断アプリ</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 class="title">石垣先生占い</h1>
+			<h4>名前と誕生日から診断するよ！！</h4>
+			<img src="ishigaki.png" width="250" height="250">
+			<p>なまえ<br><input type="text" id="name" placeholder="例：N田N男"></p>
+			<p>誕生日<br><input type="number" id="birthday" placeholder="例：20180205"></p>
+			<button onclick="shindan()">Let's 石垣!</button>
+			<p id="result"></p>
+			<div id="tweet-area">
+			</div>
+
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+										  p=/^http:/.test(d.location)?'http':'https';
+				 if(!d.getElementById(id)){js=d.createElement(s);
+					 js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+					 fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</script>
+			<script src="script.js" charset="utf-8"></script>
+	</body>
+</html>
